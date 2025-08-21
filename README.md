@@ -1,3 +1,23 @@
+## Statamic forms test
+
+This repository is to show an issue with combining static caching, forms and nocache.
+
+### How the project was set up
+
+1. Create new statamic application using `statamic new statamic-forms-test`
+1. Create a simple form in the control panel
+1. Add the simple form to the default layout and wrap it with `nocache`
+   - See [resources/views/_form.antlers.html](resources/views/_form.antlers.html)
+
+### How to test
+1. Run application and go to `http://statamic-forms-test.test/contact-form` or `localhost/contact-form`
+1. Test the form with `STATAMIC_STATIC_CACHING_STRATEGY=none`
+   - It shows the success message
+1. Test the form with with `STATAMIC_STATIC_CACHING_STRATEGY=full`
+   - It doesn't show the success message
+
+
+
 <p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="400" alt="Statamic Logo" /></p>
 
 ## About Statamic
