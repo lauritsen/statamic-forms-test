@@ -1,0 +1,18 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: required_field
+            field:
+              type: text
+              display: 'Required Field'
+              validate:
+                - required
+          -
+            handle: optional_field
+            field:
+              type: text
+              display: 'Optional field'
